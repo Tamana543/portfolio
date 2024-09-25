@@ -204,9 +204,9 @@ body.dark #moon {
 .btn i {
   margin-right: 10px;
 }
-i {
+/* i {
   font-size: 16px;
-}
+} */
 /* social_icons */
 .social_icons {
   display: flex;
@@ -471,12 +471,15 @@ i {
   overflow: hidden;
   cursor: pointer;
 }
+.project-box a,
 .project-box > i {
-  font-size: 50px;
+  font-size: 50px !important;
   color: #8749f2;
   margin-bottom: 25px;
 }
-
+.project-box a {
+  font-size: 36px !important;
+}
 .project-box label {
   font-size: 15px;
   color: var(--text-color);
@@ -497,6 +500,7 @@ i {
   bottom: 0%;
 }
 .project-box:hover.project-box i,
+.project-box:hover.project-box a,
 .project-box:hover.project-box > h3,
 .project-box:hover.project-box > label {
   color: #fff;
