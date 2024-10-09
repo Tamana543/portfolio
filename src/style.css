@@ -602,10 +602,11 @@ footer a {
 
 @media only screen and (max-width: 900px) {
   .nav-menu-btn {
-    display: none;
+    display: block;
   }
+
   .nav-menu-responsive {
-    left: 0;
+    left: 0px;
   }
   .nav-menu {
     position: fixed;
@@ -623,6 +624,7 @@ footer a {
     transition: 0.3s;
   }
   .nav_menu_list {
+    display: flex;
     flex-direction: column;
     list-style-type: none;
   }
@@ -702,5 +704,8 @@ footer a {
   .contact-info {
     padding: 0px;
     width: 100%;
+  }
+  .nav_menu_list {
+    display: none;
   }
 }

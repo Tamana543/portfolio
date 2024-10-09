@@ -2,10 +2,11 @@ function myMenuFunction() {
   const menuBtn = document.getElementById("navMenu");
 
   if (menuBtn.className === "nav-menu") {
-    menuBtn.className += "responsive";
+    menuBtn.classList.add("responsive");
   } else {
-    menuBtn.className = "nav-menu";
+    menuBtn.classList.add("nav-menu");
   }
+  document.querySelector(".nav_menu_list").style.display = "flex";
 }
 
 // DarkMode
@@ -58,10 +59,6 @@ const srRight = ScrollReveal({
 srRight.reveal(".skill", { delay: 100 });
 srRight.reveal(".skill-box", { delay: 100 });
 
-// Download Resume
-// document.getElementById("download").addEventListener("click", () => {
-//   document.getElementById("my-resume").src = url();
-// });
 // active Link
 const sections = document.querySelectorAll(".section[id]");
 const navLink = document.querySelector(".nav_menu");
