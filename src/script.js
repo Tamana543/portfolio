@@ -80,22 +80,20 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
-// navLink.addEventListener("click", scrollActive);
+navLink.addEventListener("click", scrollActive);
 
-// const navLink = document.querySelector(".nav_menu");
-
-// navLink.addEventListener("click", function (event) {
-//   if (event.target.classList.contains("nav__link")) {
-//     const main = event.target;
-//     const sibling = main.closest(".header").querySelectorAll(".nav__link");
-//     sibling.forEach((item) => {
-//       if (item !== main) item.classList.add("active_link");
-//       else console.log(`Bommm`);
-//     });
-//     // if (ele.classList.contains("active_link")) {
-//     //   this.classList.remove("active_link");
-//     // } else {
-//     //   this.classList.add("active_link");
-//     // }
-//   }
-// });
+navLink.addEventListener("click", function (event) {
+  if (event.target.classList.contains("nav__link")) {
+    const main = event.target;
+    const sibling = main.closest(".header").querySelectorAll(".nav__link");
+    sibling.forEach((item) => {
+      if (item !== main) item.classList.add("active_link");
+      else console.log(`Bommm`);
+    });
+    // if (ele.classList.contains("active_link")) {
+    //   this.classList.remove("active_link");
+    // } else {
+    //   this.classList.add("active_link");
+    // }
+  }
+});
