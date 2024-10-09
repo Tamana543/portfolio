@@ -639,7 +639,7 @@ footer a {
     height: 100vh;
   }
   .featured-text {
-    width: 100%;
+    width: 95%;
     order: 2;
     justify-content: center;
     align-content: flex-start;
@@ -669,11 +669,11 @@ footer a {
   .col {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
   }
   .about-info,
   .contact-info {
-    width: 100%;
+    width: 95%;
   }
   .project-container {
     justify-content: center;
@@ -696,7 +696,7 @@ footer a {
     font-size: 40px;
   }
   .project-box {
-    width: 100%;
+    width: 90%;
   }
   .mode {
     margin-left: 50%;
@@ -707,5 +707,11 @@ footer a {
   }
   .nav_menu_list {
     display: none;
+  }
+  .col-2 {
+    width: 80%;
+  }
+  .skill {
+    width: 95%;
   }
 }
